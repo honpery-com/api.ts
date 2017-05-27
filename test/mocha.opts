@@ -1,0 +1,6 @@
+--ui bdd
+--recursive
+--require ts-node/register
+--watch
+--watch-extensions ts
+./test/**/*.ts
