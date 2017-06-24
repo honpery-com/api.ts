@@ -1,29 +1,44 @@
 {
-  "name": "api.ts",
-  "version": "0.0.1",
-  "description": "The api server based on TypeScript and koa.",
-  "main": "index.js",
-  "scripts": {
-    "test": "./node_modules/.bin/mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/honpery-com/api.ts.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/honpery-com/api.ts/issues"
-  },
-  "homepage": "https://github.com/honpery-com/api.ts#readme",
-  "devDependencies": {
-    "@types/chai": "^3.5.2",
-    "@types/mocha": "^2.2.41",
-    "chai": "^4.0.0",
-    "mocha": "^3.4.2",
-    "ts-node": "^3.0.4",
-    "tslint": "^5.3.2",
-    "typescript": "^2.3.3"
-  }
+	"name": "api.ts",
+	"version": "0.0.1",
+	"description": "The api server based on TypeScript and koa.",
+	"main": "index.js",
+	"scripts": {
+		"dev": "./node_modules/.bin/nodemon -w ./src -x ./node_modules/.bin/ts-node ./src/server.ts",
+		"test": "./node_modules/.bin/mocha",
+		"build": "tsc",
+		"lint": "./node_modules/.bin/tslint ./src/**/*.ts",
+		"ncu": "./node_modules/.bin/ncu -a && yarn install"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/honpery-com/api.ts.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/honpery-com/api.ts/issues"
+	},
+	"homepage": "https://github.com/honpery-com/api.ts#readme",
+	"devDependencies": {
+		"@types/chai": "^4.0.0",
+		"@types/koa": "^2.0.39",
+		"@types/koa-router": "^7.0.22",
+		"@types/mocha": "^2.2.41",
+		"@types/mongoose": "^4.7.18",
+		"@types/node": "^8.0.0",
+		"chai": "^4.0.2",
+		"mocha": "^3.4.2",
+		"nodemon": "^1.11.0",
+		"npm-check-updates": "^2.11.3",
+		"ts-node": "^3.0.6",
+		"tslint": "^5.4.3",
+		"typescript": "^2.3.4"
+	},
+	"dependencies": {
+		"koa": "^2.2.0",
+		"koa-router": "^7.2.1",
+		"mongoose": "^4.10.7"
+	}
 }

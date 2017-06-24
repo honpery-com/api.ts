@@ -1,28 +1,31 @@
 {
-    "compilerOptions": {
-        "module": "umd",
-        "moduleResolution": "node",
-        "target": "es5",
-        "sourceMap": true,
-        // "noImplicitAny": true,
-        "removeComments": true,
-        "typeRoots": [
-            "node_modules"
-        ],
-        "types": [
-            "mocha",
-            "chai"
-        ],
-        "experimentalDecorators": true,
-        "outDir": "./build",
-        "watch": true
-    },
-    "include": [
-        "./src/**/*"
-    ],
-    "files": [
-        "*"
-    ],
-    "compileOnSave": true,
-    "buildOnSave": true
+	"compilerOptions": {
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es5",
+		"sourceMap": true,
+		// "noImplicitAny": true,
+		"removeComments": true,
+		"typeRoots": [
+			"node_modules"
+		],
+		"types": [
+			"mocha",
+			"chai"
+		],
+		"experimentalDecorators": true,
+		"outDir": "./build",
+		"watch": true,
+		"lib": [
+			"es2015"
+		]
+	},
+	"include": [
+		"./src/**/*"
+	],
+	"files": [
+		"*"
+	],
+	"compileOnSave": true,
+	"buildOnSave": true
 }
