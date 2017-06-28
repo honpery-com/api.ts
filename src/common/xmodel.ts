@@ -6,25 +6,26 @@ export class Xmodel {
 	private model;
 
 	constructor(schemaName: string) {
-	}
-
-	list() {
 
 	}
 
-	detail(_id) {
+	public list() {
 
 	}
 
-	create() {
+	public detail(_id) {
 
 	}
 
-	update() {
+	public create() {
 
 	}
 
-	delete() {
+	public update() {
+
+	}
+
+	public delete() {
 
 	}
 }

@@ -23,7 +23,7 @@ export interface IResume {
 interface ISkill {
 	name: string;
 	description: string;
-	process: number;
+	progress: number;
 }
 
 interface IEduExp {
@@ -76,7 +76,7 @@ export const ResumeSchema: {[key in keyof IResume]: mongoose.SchemaTypeOpts<IRes
 				type: String,
 				default: '',
 			},
-			process: {
+			progress: {
 				type: Number,
 				max: 100,
 				min: 0,
